@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f6f6f6;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: rgb(100, 180, 19);
+    margin-bottom: 10px;
+    &__search {
+        input[type="text"] {
+            padding: 6px;
+            border: none;
+        }
+        input[type="submit"] {
+            float: right;
+            padding: 6px 10px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.wrapper {
+    padding: 0 1rem;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 2rem;
+}
+
+.news__card {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 20px;
+}
+
+.news__card:hover {
+    box-shadow: 0 3px 3px rgb(22, 22, 22), 0 3px 3px black;
+}
